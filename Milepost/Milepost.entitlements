@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Granted by Apple (Case-ID 21562642). Both Xcode and Simulator
+	     require a provisioning profile that carries the matching CarPlay
+	     capability — the key alone is not enough. See CarPlay Developer
+	     Guide, June 2026, p13. -->
+	<key>com.apple.developer.carplay-video</key>
+	<true/>
+	<!-- Enable alongside -video once the audio entitlement is also granted:
+	     the guide (p14) allows combining them in one app, and it is what
+	     makes the app appear on the home screen in cars without video.
+	<key>com.apple.developer.carplay-audio</key>
+	<true/>
+	-->
+	<!-- No app group: the entitlements file must not request anything the
+	     provisioning profile does not grant, or signing fails. Re-add it here
+	     *and* on the App ID if a widget extension is added later. -->
+</dict>
+</plist>

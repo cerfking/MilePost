@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<!-- Required for CarPlay: the phone window scene and the CarPlay
+		     template scene are two live scenes in one process. -->
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<true/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<!-- ONLY the CarPlay role is declared here.
+
+			     Declaring UIWindowSceneSessionRoleApplication as well is what
+			     broke this: with the SwiftUI App lifecycle, SwiftUI installs
+			     and manages its own window scene, and declaring that role in
+			     the manifest interferes with the scene machinery — iOS then
+			     never vends a CPTemplateApplicationScene at all, with no error
+			     reported anywhere.
+
+			     UISceneClassName is also required. It defaults to
+			     UIWindowScene when omitted, which silently prevents the app
+			     from registering as a CarPlay app. -->
+			<key>CPTemplateApplicationSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneClassName</key>
+					<string>CPTemplateApplicationScene</string>
+					<key>UISceneConfigurationName</key>
+					<string>CarPlaySceneDelegate</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).CarPlaySceneDelegate</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+	</array>
+</dict>
+</plist>

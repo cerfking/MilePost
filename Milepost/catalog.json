@@ -1,0 +1,79 @@
+{
+  "items": [
+    {
+      "id": "mp-v1",
+      "title": "Earth from Orbit",
+      "show": "Milepost",
+      "summary": "A year of our planet seen from 400 kilometres up \u2014 storms turning, coastlines sliding past, city light blooming as the terminator crosses.",
+      "duration": 190.0,
+      "kind": "video",
+      "resourceName": "clip-orbit",
+      "posterName": "poster-orbit",
+      "badge": "NEW",
+      "remoteURL": "https://images-assets.nasa.gov/video/GSFC_20150420_Orbit_m11858_2014/GSFC_20150420_Orbit_m11858_2014~mobile.mp4"
+    },
+    {
+      "id": "mp-v2",
+      "title": "Airglow and the Milky Way",
+      "show": "Milepost",
+      "summary": "The thin band of light at the edge of the atmosphere, photographed against the galaxy from the International Space Station.",
+      "duration": 21.0,
+      "kind": "video",
+      "resourceName": "clip-airglow",
+      "posterName": "poster-airglow",
+      "badge": "LIVE",
+      "remoteURL": "https://images-assets.nasa.gov/video/GSFC_20180105_GOLD_m12817_Airglow_Milkyway/GSFC_20180105_GOLD_m12817_Airglow_Milkyway~mobile.mp4"
+    },
+    {
+      "id": "mp-v3",
+      "title": "The Multi-coloured Glow",
+      "show": "Milepost",
+      "summary": "Why the upper atmosphere shines in bands of red and green, and what those colours reveal about the air a hundred kilometres overhead.",
+      "duration": 194.0,
+      "kind": "video",
+      "resourceName": "clip-glow",
+      "posterName": "poster-glow",
+      "remoteURL": "https://images-assets.nasa.gov/video/GSFC_20181022_ICON_m12902_Airglow/GSFC_20181022_ICON_m12902_Airglow~mobile.mp4"
+    },
+    {
+      "id": "mp-01",
+      "title": "The Long Way Around",
+      "show": "Milepost",
+      "summary": "There is a stretch of two lane road east of the coast range where the radio gives out completely. Drivers used to plan for that.",
+      "duration": 26.1,
+      "kind": "audio",
+      "resourceName": "episode-01",
+      "posterName": "poster-orbit"
+    },
+    {
+      "id": "mp-02",
+      "title": "Notes on Cold Starts",
+      "show": "Milepost",
+      "summary": "The first second of an application is the only second the user did not choose to spend. Everything after that, they opted into.",
+      "duration": 23.41,
+      "kind": "audio",
+      "resourceName": "episode-02",
+      "posterName": "poster-airglow"
+    },
+    {
+      "id": "mp-03",
+      "title": "Two Processes, One Truth",
+      "show": "Milepost",
+      "summary": "The same state in two places that cannot see each other. Leave a note somewhere they both know about, and tap the other on the shoulder.",
+      "duration": 24.33,
+      "kind": "audio",
+      "resourceName": "episode-03",
+      "posterName": "poster-glow"
+    },
+    {
+      "id": "mp-04",
+      "title": "Everything Is a Tradeoff",
+      "show": "Milepost",
+      "summary": "The most useful thing a senior engineer does is not choosing the right answer. It is saying out loud what the other answer would have cost.",
+      "duration": 15.33,
+      "kind": "audio",
+      "resourceName": "episode-04",
+      "posterName": "poster-orbit"
+    }
+  ]
+}
