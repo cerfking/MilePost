@@ -153,6 +153,17 @@ CarPlay.
 
 ## Credits
 
-Video clips are NASA public domain; audio is synthesised locally. See
-[CREDITS.md](CREDITS.md). Project state and device-specific notes are in
-[HANDOFF.md](HANDOFF.md).
+Video clips are excerpts from NASA Goddard Space Flight Center productions, which
+are in the public domain — trimmed and re-encoded here for size. NASA does not
+endorse this project and no NASA insignia are used. See
+<https://www.nasa.gov/nasa-brand-center/images-and-media/> for usage guidelines.
+
+| Clip | NASA identifier |
+| --- | --- |
+| Earth from Orbit | `GSFC_20150420_Orbit_m11858_2014` |
+| Airglow and the Milky Way | `GSFC_20180105_GOLD_m12817_Airglow_Milkyway` |
+| The Multi-coloured Glow | `GSFC_20181022_ICON_m12902_Airglow` |
+
+Originals: <https://images.nasa.gov>. The four spoken-word episodes were written
+for this project and synthesised locally with the macOS `say` command. The app
+icon is generated procedurally with Core Graphics.
