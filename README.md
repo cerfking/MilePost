@@ -5,6 +5,20 @@ framework APIs introduced for iOS 27. It runs on real hardware: templates render
 on the car display, audio plays through the head unit, and video streams to the
 car over AirPlay.
 
+![The Videos tab on the CarPlay display](Screenshots/videos-tab.png)
+
+*Videos tab: a details header with transport buttons, a card row with `NEW` and
+`LIVE` overlays and per-item progress, and the iOS 27 MiniPlayer. Running on an
+iPhone against CarPlay Simulator.*
+
+![An item's detail page](Screenshots/detail-page.png)
+
+*Selecting a card pushes a detail page. The transport button tracks real playback
+state — here the item is paused, so it reads **Resume** with a play glyph and the
+progress it will resume from.*
+
+📹 [Screen recording of the app running in CarPlay](Screenshots/demo.mov)
+
 The interesting part is not the app. It is the split between the framework that
 decides *what* the car shows and the thin adapter that maps it onto CarPlay — a
 split that makes the CarPlay UI unit-testable without a car, a phone, or a
@@ -126,8 +140,9 @@ Every one of these fails silently — no exception, no console error.
 - **Requires a granted CarPlay entitlement.** `com.apple.developer.carplay-video`
   is assigned by Apple on request; the app cannot be built for CarPlay without
   it, and simulator builds cannot stand in.
-- **Video needs network.** Streamed by necessity (see #3). Audio stays bundled
-  and works offline.
+- **Video needs network.** Streamed by necessity (see #3), so the repository
+  carries no video files — only the poster frames. Audio stays bundled and works
+  offline.
 - **iOS 27.0 beta 24A5408d has a CarPlay scene regression** — on that build iOS
   vends no `CPTemplateApplicationScene` at all. Confirmed to be an OS defect
   rather than app code by reproducing it with a third-party reference sample
